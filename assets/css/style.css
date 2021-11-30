@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  /* background: url("../img/hero-bg.jpg") top center; */
+  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -426,14 +426,57 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: rgb(197, 194, 194);
   font-family: "Poppins", sans-serif;
 }
-#hero h1 span {
-  color: #cda45e;
+#hero .title-span {
+  color: #dfb977;
+}
+#hero .hero-social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #28251f;
+  color: rgb(236, 219, 118);
+  line-height: 1;
+  padding: 8px 0;
+  margin-top: 20px;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#hero .hero-social-links a:hover {
+  background: #cda45e;
+  color: #fff;
+  text-decoration: none;
+}
+#hero .btn-get-started {
+  font-size: 64px;
+  transition: 0.5s;
+  color: #fff;
+  height: 60px;
+  margin-top: 25px;
+  text-align: center;
+}
+#hero .btn-get-started:hover {
+  padding-top: 10px;
+  color: #150e6d;
+}
+
+#hero .hero-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .hero .hero-subtitle {
+    font-size: 2.5rem;
+  }
 }
 #hero h2 {
-  color: #eee;
+  color: rgb(219, 214, 214);
   margin-bottom: 10px 0 0 0;
   font-size: 22px;
 }
@@ -654,6 +697,17 @@ section {
   color: #37332a;
   content: "/";
 }
+.about-title{
+  color: #c99132;
+  margin-bottom: 30px;
+
+}
+.profile-title{
+  color: #eebb62;
+  margin-top: 10px;
+  margin-bottom: 15
+  px;
+}
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
@@ -744,8 +798,25 @@ section {
   padding-right: 4px;
   color: #cda45e;
 }
-.about .content p:last-child {
-  margin-bottom: 0;
+
+.social-link a {
+  font-size: 18px;
+  display: inline-block;
+  background: #28251f;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.social-link a:hover {
+  background: #cda45e;
+  color: #fff;
+  text-decoration: none;
 }
 @media (min-width: 1024px) {
   .about {
