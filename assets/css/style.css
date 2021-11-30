@@ -825,39 +825,66 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# services
 --------------------------------------------------------------*/
-.why-us .box {
+.services .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
   background: #1a1814;
 }
-.why-us .box span {
-  display: block;
+.services-title{
+  font-size: 23px;
+  color: rgb(209, 205, 205);
+  letter-spacing: 1.5px;
+}
+.services .icon {
+  width: 54px;
+  height: 54px;
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 2px solid #149ddd;
+ 
+}
+
+.services .icon:hover{
+  background-color: rgb(17, 50, 110);
+  border: 1px solid rgb(17, 50, 110);
+
+}
+
+.services .box i {
+  /* display: block; */
   font-size: 28px;
   font-weight: 700;
-  color: #cda45e;
+  color: white;
+  margin-right: 14px;
+
 }
-.why-us .box h4 {
+.services .box h4 {
   font-size: 24px;
   font-weight: 600;
+  text-align: center;
   padding: 0;
   margin: 20px 0;
   color: rgba(255, 255, 255, 0.8);
 }
-.why-us .box p {
+.services .box p {
   color: #aaaaaa;
   font-size: 15px;
   margin: 0;
   padding: 0;
+  text-align: justify;
 }
-.why-us .box:hover {
-  background: #cda45e;
+.services .box:hover {
+  background: #cea256;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
-.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+.services .box:hover i, .services .box:hover h4, .services .box:hover p {
   color: #fff;
 }
 
