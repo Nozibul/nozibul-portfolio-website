@@ -242,13 +242,29 @@
 
  });
 
+ const portfolioLightbox = GLightbox({
+  selector: '.portfolio-lightbox'
+});
 
-  /**
-   * Initiate glightbox 
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+/**
+ * Portfolio details slider
+ */
+new Swiper('.portfolio-details-slider', {
+  speed: 300,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  }
+});
+
+
+
 
   /**
    * Events slider
